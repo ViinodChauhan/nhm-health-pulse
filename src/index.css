@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* NHM HP Monitoring Portal Design System
+Government + Healthcare theme with professional color scheme
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -17,24 +17,33 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Government Blue Theme */
+    --primary: 220 91% 35%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Healthcare Green */
+    --secondary: 158 64% 40%;
+    --secondary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 13% 46%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 220 14% 96%;
+    --accent-foreground: 220 13% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Alert Colors */
+    --destructive: 0 74% 50%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --warning: 35 85% 55%;
+    --warning-foreground: 0 0% 100%;
+    
+    --success: 158 64% 40%;
+    --success-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 220 91% 35%;
 
     --radius: 0.5rem;
 
