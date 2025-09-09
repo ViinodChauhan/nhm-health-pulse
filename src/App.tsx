@@ -7,6 +7,7 @@ import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 import { DashboardHeader } from "@/components/DashboardHeader";
 import Index from "./pages/Index";
+import BeneficiaryManagement from "./pages/BeneficiaryManagement";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,8 @@ const App = () => (
               <main className="flex-1">
                 <Routes>
                   <Route path="/" element={<Index />} />
+                  <Route path="/beneficiaries" element={<BeneficiaryManagement />} />
+                  <Route path="/beneficiaries/search" element={<BeneficiaryManagement />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>
