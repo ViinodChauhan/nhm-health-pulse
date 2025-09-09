@@ -8,6 +8,7 @@ import { AppSidebar } from "@/components/AppSidebar";
 import { DashboardHeader } from "@/components/DashboardHeader";
 import Index from "./pages/Index";
 import BeneficiaryManagement from "./pages/BeneficiaryManagement";
+import NutritionMonitoring from "./pages/NutritionMonitoring";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
                   <Route path="/" element={<Index />} />
                   <Route path="/beneficiaries" element={<BeneficiaryManagement />} />
                   <Route path="/beneficiaries/search" element={<BeneficiaryManagement />} />
+                  <Route path="/health/nutrition" element={<NutritionMonitoring />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>
