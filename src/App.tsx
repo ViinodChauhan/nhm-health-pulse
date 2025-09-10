@@ -9,6 +9,7 @@ import { DashboardHeader } from "@/components/DashboardHeader";
 import Index from "./pages/Index";
 import BeneficiaryManagement from "./pages/BeneficiaryManagement";
 import NutritionMonitoring from "./pages/NutritionMonitoring";
+import DiagnosticResults from "./pages/DiagnosticResults";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
                   <Route path="/beneficiaries" element={<BeneficiaryManagement />} />
                   <Route path="/beneficiaries/search" element={<BeneficiaryManagement />} />
                   <Route path="/health/nutrition" element={<NutritionMonitoring />} />
+                  <Route path="/health/diagnostics" element={<DiagnosticResults />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>
